@@ -10,7 +10,7 @@ class ScoreBoard {
 	
 	show(){
 		stroke(255);
-		fill(55);
+		fill(255);
 		rect(this.x, this.y, this.w, this.h);
 		textFont('Courier New');
 		textSize(28);
