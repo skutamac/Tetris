@@ -67,6 +67,7 @@ function keyPressed() {
       console.log("Dropped");
       grid.add(block);
       score += block.value;
+      console.log("Score Updated");
       block = null;
       block = new Block(models[ceil(random(0, 5))], 5, 0, 255);
       console.log("New Block Added");
