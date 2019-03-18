@@ -134,10 +134,12 @@ function keyPressed() {
         while (block.canMove(0, 1, grid)){
           block.move(0, 1);
         }
+        console.log("Dropped");
         grid.add(block);
         score += block.value;
         block = null;
         block = new Block(models[ceil(random(0, 5))], 5, 0, 255);
+        console.log("New Block Added");
     }
   }
   // check for space bar to cancel game or start new game
