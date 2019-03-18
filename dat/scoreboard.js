@@ -14,7 +14,7 @@ class ScoreBoard {
 		rect(this.x, this.y, this.w, this.h);
 		textFont('Courier New');
 		textSize(28);
-		fill(255);
+		fill(55);
 		text('SCORE: ' + this.score, this.x + (this.w / 8), this.y + 30);
 		text('LEVEL: ' + this.level, this.x + (this.w / 8), this.y + 70);
 	}
