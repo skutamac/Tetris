@@ -66,6 +66,7 @@ function keyPressed() {
       }
       grid.add(block);
       scoreBoard.score += block.value;
+      grid.eliminate();
       block = null;
       block = new Block(models[ceil(random(0, 5))], 5, 0, 255);
     }
