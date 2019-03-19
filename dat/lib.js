@@ -41,6 +41,12 @@ function newBucket(){
 function keyPressed() {
   // check for key presses and take action based on input
   if (gameActive){
+    //if block at bottom reset time step to allow for time to move into position
+    if(!block.canmove(0,1,0,grid){
+      lastStep = millis();
+
+    }
+
     // check for rotate input from Up Arrow, check if can rotate and then rotate
     if (gameActive && keyCode === UP_ARROW) {
       if (block.canMove(0,0,1,grid)){
